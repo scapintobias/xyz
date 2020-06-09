@@ -1,0 +1,112 @@
+a,
+abbr,
+acronym,
+address,
+article,
+aside,
+blockquote,
+body,
+caption,
+code,
+dd,
+del,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+iframe,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+section,
+span,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+ul {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a img {
+  border: none;
+}
+
+body,
+input {
+  font-weight: normal;
+  font-size: 87.5%;
+  line-height: 1.5em;
+  font-family: Helvetica, Impact, Arial, sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+  clear: both;
+}
+
+h3 {
+  font-weight: normal;
+  font-style: italic;
+  x-color: #ef5419;
+  clear: both;
+}
+
+h4 {
+  color: #ef5419;
+}
+
+h6 {
+  color: #ef5419;
+  clear: both;
+}
+
+.footer {
+  align-items: flex-end;
+  color: #666;
+  padding-bottom: 1rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.icon img {
+  width: 5rem;
+}
