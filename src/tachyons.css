@@ -27,16 +27,17 @@ a {
 	background-color: transparent;
 	text-decoration: none;
 	padding-bottom: 1px;
+	outline: 0;
 }
 
 a:link {
 	text-decoration: none;
-
+	outline: 0;
 }
 
 a:visited {
 	text-decoration: none;
-
+	outline: 0;
 }
 
 abbr[title] {
@@ -6439,9 +6440,11 @@ code {
 	.vh-75-m {
 		height: 75vh;
 	}
+
 	.vh-90-m {
 		height: 90vh;
 	}
+
 	.vh-100-m {
 		height: 100vh;
 	}

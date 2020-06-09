@@ -25,40 +25,44 @@ class Example extends React.Component {
 
 	render() {
 		return (
-			<section className="">
+			<section>
 				<Menu
+					width="100%"
 					right
 					isOpen={this.state.menuOpen}
 					onStateChange={(state) => this.handleStateChange(state)}
+					className='outline-0'
 				>
-					<NavLink
-						onClick={() => this.closeMenu()}
-						to="/"
-						className="link helvetica white f2 fw7 pb4"
-					>
-						Home
-					</NavLink>
-					<NavLink
-						onClick={() => this.closeMenu()}
-						to="/work"
-						className="link helvetica white f2 fw7 pb4"
-					>
-						Work
-					</NavLink>
-					<NavLink
-						onClick={() => this.closeMenu()}
-						to="/about"
-						className="link helvetica white f2 fw7 pb4"
-					>
-						About
-					</NavLink>
-					<NavLink
-						onClick={() => this.closeMenu()}
-						to="/contacts"
-						className="link helvetica white f2 fw7 pb4"
-					>
-						Contacts
-					</NavLink>
+
+						<NavLink
+							onClick={() => this.closeMenu()}
+							to="/"
+							className="link helvetica white f-5 fw7 pb5 outline-0"
+						>
+							Home
+						</NavLink>
+						<NavLink
+							onClick={() => this.closeMenu()}
+							to="/work"
+							className="link helvetica white f-5 fw7 pb5 outline-0"
+						>
+							Work
+						</NavLink>
+						<NavLink
+							onClick={() => this.closeMenu()}
+							to="/about"
+							className="link helvetica white f-5 fw7 pb5 outline-0"
+						>
+							About
+						</NavLink>
+						<NavLink
+							onClick={() => this.closeMenu()}
+							to="/contacts"
+							className="link helvetica white f-5 fw7 pb5 outline-0"
+						>
+							Contacts
+						</NavLink>
+
 				</Menu>
 			</section>
 		);
