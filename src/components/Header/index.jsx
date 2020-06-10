@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { slide as Menu } from 'react-burger-menu';
+import { slide as Menu } from './Menu/lib/BurgerMenu.js';
 import './style.css';
 
 class Example extends React.Component {
@@ -31,38 +31,36 @@ class Example extends React.Component {
 					right
 					isOpen={this.state.menuOpen}
 					onStateChange={(state) => this.handleStateChange(state)}
-					className='outline-0'
+					className="outline-0"
 				>
-
-						<NavLink
-							onClick={() => this.closeMenu()}
-							to="/"
-							className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
-						>
-							Home
-						</NavLink>
-						<NavLink
-							onClick={() => this.closeMenu()}
-							to="/work"
-							className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
-						>
-							Work
-						</NavLink>
-						<NavLink
-							onClick={() => this.closeMenu()}
-							to="/about"
-							className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
-						>
-							About
-						</NavLink>
-						<NavLink
-							onClick={() => this.closeMenu()}
-							to="/contacts"
-							className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
-						>
-							Contacts
-						</NavLink>
-
+					<NavLink
+						onClick={() => this.closeMenu()}
+						to="/"
+						className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
+					>
+						Home
+					</NavLink>
+					<NavLink
+						onClick={() => this.closeMenu()}
+						to="/work"
+						className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
+					>
+						Work
+					</NavLink>
+					<NavLink
+						onClick={() => this.closeMenu()}
+						to="/about"
+						className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
+					>
+						About
+					</NavLink>
+					<NavLink
+						onClick={() => this.closeMenu()}
+						to="/contacts"
+						className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
+					>
+						Contacts
+					</NavLink>
 				</Menu>
 			</section>
 		);
