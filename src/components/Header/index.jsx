@@ -83,7 +83,7 @@ export function Header() {
 
 export function Footer() {
 	return (
-		<div className="db bg-black helvetica f4 white tr w-100 pa2">
+		<div className="db bg-gold helvetica f4 fw8 white  w-100 pa2">
 			Scapin Tobias ©2020
 		</div>
 	);

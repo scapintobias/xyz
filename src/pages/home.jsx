@@ -12,30 +12,10 @@ export const Home = () => (
 			<p>Design for All.</p>
 			<p>Design in every measure.</p>
 		</HomeText>
-		<HomeProject
-			title="Villa Manin"
-			subtitle="Corporate Image"
-
-		/>
-		<HomeProject
-			title="Villa Manin"
-			subtitle="Corporate Image"
-
-		/>
-		<HomeProject
-			title="Villa Manin"
-			subtitle="Corporate Image"
-
-		/>
-		<HomeProject
-			title="Villa Manin"
-			subtitle="Corporate Image"
-
-		/>
-		<HomeProject
-			title="Villa Manin"
-			subtitle="Corporate Image"
-
-		/>
+		<HomeProject title="Villa Manin" subtitle="Corporate Image" />
+		<HomeProject title="Villa Manin" subtitle="Corporate Image" />
+		<HomeProject title="Villa Manin" subtitle="Corporate Image" />
+		<HomeProject title="Villa Manin" subtitle="Corporate Image" />
+		<HomeProject title="Villa Manin" subtitle="Corporate Image" />
 	</main>
 );

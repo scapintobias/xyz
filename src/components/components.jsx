@@ -1,10 +1,9 @@
 import React from 'react';
 
-
 export function HomeText({ children }) {
 	return (
-		<div className="vh-100 vh-90-m flex bg-purple">
-			<div className="helvetica white fw8 self-center center f-4 f3-m lh-copy">
+		<div className="vh-100 vh-90-m flex bg-gold">
+			<div className="helvetica white fw8 self-center center tracked f-4 f3-m lh-copy">
 				{children}
 			</div>
 		</div>

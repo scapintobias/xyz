@@ -1,14 +1,3 @@
-/* eslint-disable no-self-compare */
-/* eslint-disable no-self-compare */
-/* eslint-disable no-self-compare */
-/* eslint-disable default-case */
-/* eslint-disable no-self-compare */
-/* eslint-disable no-lone-blocks */
-/* eslint-disable no-self-compare */
-/* eslint-disable no-self-compare */
-/* eslint-disable no-self-compare */
-/* eslint-disable no-undef */
-/* eslint-disable no-restricted-globals */
 (function(f) {
 	if (typeof exports === 'object' && typeof module !== 'undefined') {
 		module.exports = f();
@@ -28,6 +17,7 @@
 		g.BurgerMenu = f();
 	}
 })(function() {
+	var define, module, exports;
 	return (function e(t, n, r) {
 		function s(o, u) {
 			if (!n[o]) {
@@ -68,6 +58,8 @@ object-assign
 @license MIT
 */
 
+					'use strict';
+					/* eslint-disable no-unused-vars */
 					var getOwnPropertySymbols = Object.getOwnPropertySymbols;
 					var hasOwnProperty = Object.prototype.hasOwnProperty;
 					var propIsEnumerable = Object.prototype.propertyIsEnumerable;
@@ -364,7 +356,7 @@ object-assign
 					 * LICENSE file in the root directory of this source tree.
 					 */
 
-					
+					'use strict';
 
 					var printWarning = function() {};
 
@@ -501,7 +493,7 @@ object-assign
 					 * LICENSE file in the root directory of this source tree.
 					 */
 
-					
+					'use strict';
 
 					var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
 
@@ -577,7 +569,7 @@ object-assign
 					 * LICENSE file in the root directory of this source tree.
 					 */
 
-					
+					'use strict';
 
 					var ReactIs = require('./node_modules/react-is');
 					var assign = require('./node_modules/object-assign');
@@ -742,7 +734,6 @@ object-assign
 						PropTypeError.prototype = Error.prototype;
 
 						function createChainableTypeChecker(validate) {
-							// eslint-disable-next-line no-self-compare
 							if ('production' !== 'production') {
 								var manualPropTypeCallCache = {};
 								var manualPropTypeWarningCount = 0;
@@ -770,7 +761,6 @@ object-assign
 										err.name = 'Invariant Violation';
 										throw err;
 									} else if (
-										// eslint-disable-next-line no-self-compare
 										'production' !== 'production' &&
 										typeof console !== 'undefined'
 									) {
@@ -1018,7 +1008,6 @@ object-assign
 
 						function createEnumTypeChecker(expectedValues) {
 							if (!Array.isArray(expectedValues)) {
-								// eslint-disable-next-line no-self-compare
 								if ('production' !== 'production') {
 									if (arguments.length > 1) {
 										printWarning(
@@ -1133,7 +1122,6 @@ object-assign
 
 						function createUnionTypeChecker(arrayOfTypeCheckers) {
 							if (!Array.isArray(arrayOfTypeCheckers)) {
-								// eslint-disable-next-line no-self-compare
 								'production' !== 'production'
 									? printWarning(
 											'Invalid argument supplied to oneOfType, expected an instance of array.'
@@ -1475,7 +1463,6 @@ object-assign
 					 * LICENSE file in the root directory of this source tree.
 					 */
 
-					// eslint-disable-next-line no-self-compare
 					if ('production' !== 'production') {
 						var ReactIs = require('./node_modules/react-is');
 
@@ -1507,7 +1494,7 @@ object-assign
 					 * LICENSE file in the root directory of this source tree.
 					 */
 
-					
+					'use strict';
 
 					var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
@@ -1527,11 +1514,11 @@ object-assign
 						 * LICENSE file in the root directory of this source tree.
 						 */
 
-						
+						'use strict';
 
 						if (process.env.NODE_ENV !== 'production') {
 							(function() {
-								
+								'use strict';
 
 								Object.defineProperty(exports, '__esModule', { value: true });
 
@@ -1820,7 +1807,7 @@ object-assign
 					 * LICENSE file in the root directory of this source tree.
 					 */
 
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: !0 });
 					var b = 'function' === typeof Symbol && Symbol.for,
 						c = b ? Symbol.for('react.element') : 60103,
@@ -1944,7 +1931,7 @@ object-assign
 			10: [
 				function(require, module, exports) {
 					(function(process) {
-						
+						'use strict';
 
 						if (process.env.NODE_ENV === 'production') {
 							module.exports = require('./cjs/react-is.production.min.js.js.js.js');
@@ -1962,7 +1949,7 @@ object-assign
 			11: [
 				function(require, module, exports) {
 					(function(global) {
-						
+						'use strict';
 						Object.defineProperty(exports, '__esModule', { value: true });
 						var _extends =
 							Object.assign ||
@@ -1995,7 +1982,7 @@ object-assign
 						})();
 						var _get = function get(_x, _x2, _x3) {
 							var _again = true;
-							while (_again) {
+							_function: while (_again) {
 								var object = _x,
 									property = _x2,
 									receiver = _x3;
@@ -2012,7 +1999,7 @@ object-assign
 										_x3 = receiver;
 										_again = true;
 										desc = parent = undefined;
-										continue;
+										continue _function;
 									}
 								} else if ('value' in desc) {
 									return desc.value;
@@ -2205,7 +2192,7 @@ object-assign
 			],
 			12: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					exports['default'] = {
 						slide: require('./menus/slide'),
@@ -2237,7 +2224,7 @@ object-assign
 			13: [
 				function(require, module, exports) {
 					(function(global) {
-						
+						'use strict';
 						Object.defineProperty(exports, '__esModule', { value: true });
 						var _extends =
 							Object.assign ||
@@ -2270,7 +2257,7 @@ object-assign
 						})();
 						var _get = function get(_x, _x2, _x3) {
 							var _again = true;
-							while (_again) {
+							_function: while (_again) {
 								var object = _x,
 									property = _x2,
 									receiver = _x3;
@@ -2287,7 +2274,7 @@ object-assign
 										_x3 = receiver;
 										_again = true;
 										desc = parent = undefined;
-										continue;
+										continue _function;
 									}
 								} else if ('value' in desc) {
 									return desc.value;
@@ -2479,7 +2466,7 @@ object-assign
 			],
 			14: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					var styles = {
 						overlay: function overlay(isOpen) {
@@ -2554,12 +2541,12 @@ object-assign
 			],
 			15: [
 				function(require, module, exports) {
-					(function (global) {
-						
+					(function(global) {
+						'use strict';
 						Object.defineProperty(exports, '__esModule', { value: true });
 						var _extends =
 							Object.assign ||
-							function (target) {
+							function(target) {
 								for (var i = 1; i < arguments.length; i++) {
 									var source = arguments[i];
 									for (var key in source) {
@@ -2570,7 +2557,7 @@ object-assign
 								}
 								return target;
 							};
-						var _createClass = (function () {
+						var _createClass = (function() {
 							function defineProperties(target, props) {
 								for (var i = 0; i < props.length; i++) {
 									var descriptor = props[i];
@@ -2580,7 +2567,7 @@ object-assign
 									Object.defineProperty(target, descriptor.key, descriptor);
 								}
 							}
-							return function (Constructor, protoProps, staticProps) {
+							return function(Constructor, protoProps, staticProps) {
 								if (protoProps) defineProperties(Constructor.prototype, protoProps);
 								if (staticProps) defineProperties(Constructor, staticProps);
 								return Constructor;
@@ -2588,7 +2575,7 @@ object-assign
 						})();
 						var _get = function get(_x3, _x4, _x5) {
 							var _again = true;
-							while (_again) {
+							_function: while (_again) {
 								var object = _x3,
 									property = _x4,
 									receiver = _x5;
@@ -2605,499 +2592,509 @@ object-assign
 										_x5 = receiver;
 										_again = true;
 										desc = parent = undefined;
-										continue;
+										continue _function;
 									}
-								};
-								function _interopRequireDefault(obj) {
-									return obj && obj.__esModule ? obj : { default: obj };
+								} else if ('value' in desc) {
+									return desc.value;
+								} else {
+									var getter = desc.get;
+									if (getter === undefined) {
+										return undefined;
+									}
+									return getter.call(receiver);
 								}
-								function _classCallCheck(instance, Constructor) {
-									if (!(instance instanceof Constructor)) {
-										throw new TypeError('Cannot call a class as a function');
+							}
+						};
+						function _interopRequireDefault(obj) {
+							return obj && obj.__esModule ? obj : { default: obj };
+						}
+						function _classCallCheck(instance, Constructor) {
+							if (!(instance instanceof Constructor)) {
+								throw new TypeError('Cannot call a class as a function');
+							}
+						}
+						function _inherits(subClass, superClass) {
+							if (typeof superClass !== 'function' && superClass !== null) {
+								throw new TypeError(
+									'Super expression must either be null or a function, not ' +
+										typeof superClass
+								);
+							}
+							subClass.prototype = Object.create(superClass && superClass.prototype, {
+								constructor: {
+									value: subClass,
+									enumerable: false,
+									writable: true,
+									configurable: true,
+								},
+							});
+							if (superClass)
+								Object.setPrototypeOf
+									? Object.setPrototypeOf(subClass, superClass)
+									: (subClass.__proto__ = superClass);
+						}
+						var _react =
+							typeof window !== 'undefined'
+								? window['React']
+								: typeof global !== 'undefined'
+								? global['React']
+								: null;
+						var _react2 = _interopRequireDefault(_react);
+						var _reactDom =
+							typeof window !== 'undefined'
+								? window['ReactDOM']
+								: typeof global !== 'undefined'
+								? global['ReactDOM']
+								: null;
+						var _reactDom2 = _interopRequireDefault(_reactDom);
+						var _propTypes = require('./node_modules/prop-types');
+						var _propTypes2 = _interopRequireDefault(_propTypes);
+						var _baseStyles = require('./baseStyles');
+						var _baseStyles2 = _interopRequireDefault(_baseStyles);
+						var _BurgerIcon = require('./BurgerIcon');
+						var _BurgerIcon2 = _interopRequireDefault(_BurgerIcon);
+						var _CrossIcon = require('./CrossIcon');
+						var _CrossIcon2 = _interopRequireDefault(_CrossIcon);
+						exports['default'] = function(styles) {
+							var Menu = (function(_Component) {
+								_inherits(Menu, _Component);
+								function Menu(props) {
+									_classCallCheck(this, Menu);
+									_get(Object.getPrototypeOf(Menu.prototype), 'constructor', this).call(
+										this,
+										props
+									);
+									this.state = { isOpen: false };
+									if (!styles) {
+										throw new Error('No styles supplied');
 									}
 								}
-								function _inherits(subClass, superClass) {
-									if (typeof superClass !== 'function' && superClass !== null) {
-										throw new TypeError(
-											'Super expression must either be null or a function, not ' +
-											typeof superClass
-										);
-									}
-									subClass.prototype = Object.create(superClass && superClass.prototype, {
-										constructor: {
-											value: subClass,
-											enumerable: false,
-											writable: true,
-											configurable: true,
+								_createClass(Menu, [
+									{
+										key: 'toggleMenu',
+										value: function toggleMenu() {
+											var _this = this;
+											var options =
+												arguments.length <= 0 || arguments[0] === undefined
+													? {}
+													: arguments[0];
+											var isOpen = options.isOpen;
+											var noStateChange = options.noStateChange;
+											var newState = {
+												isOpen: typeof isOpen !== 'undefined' ? isOpen : !this.state.isOpen,
+											};
+											this.applyWrapperStyles();
+											this.setState(newState, function() {
+												!noStateChange && _this.props.onStateChange(newState);
+												if (!_this.props.disableAutoFocus) {
+													if (newState.isOpen) {
+														var firstItem = document.querySelector('.bm-item');
+														if (firstItem) {
+															firstItem.focus();
+														}
+													} else {
+														if (document.activeElement) {
+															document.activeElement.blur();
+														} else {
+															document.body.blur();
+														}
+													}
+												}
+												_this.timeoutId && clearTimeout(_this.timeoutId);
+												_this.timeoutId = setTimeout(function() {
+													_this.timeoutId = null;
+													if (!newState.isOpen) {
+														_this.applyWrapperStyles(false);
+													}
+												}, 500);
+											});
 										},
-									});
-									if (superClass)
-										Object.setPrototypeOf
-											? Object.setPrototypeOf(subClass, superClass)
-											: (subClass.__proto__ = superClass);
-								}
-								var _react =
-									typeof window !== 'undefined'
-										? window['React']
-										: typeof global !== 'undefined'
-											? global['React']
-											: null;
-								var _react2 = _interopRequireDefault(_react);
-								var _reactDom =
-									typeof window !== 'undefined'
-										? window['ReactDOM']
-										: typeof global !== 'undefined'
-											? global['ReactDOM']
-											: null;
-								var _reactDom2 = _interopRequireDefault(_reactDom);
-								var _propTypes = require('./node_modules/prop-types');
-								var _propTypes2 = _interopRequireDefault(_propTypes);
-								var _baseStyles = require('./baseStyles');
-								var _baseStyles2 = _interopRequireDefault(_baseStyles);
-								var _BurgerIcon = require('./BurgerIcon');
-								var _BurgerIcon2 = _interopRequireDefault(_BurgerIcon);
-								var _CrossIcon = require('./CrossIcon');
-								var _CrossIcon2 = _interopRequireDefault(_CrossIcon);
-								exports['default'] = function (styles) {
-									var Menu = (function (_Component) {
-										_inherits(Menu, _Component);
-										function Menu(props) {
-											_classCallCheck(this, Menu);
-											_get(Object.getPrototypeOf(Menu.prototype), 'constructor', this).call(
-												this,
-												props
-											);
-											this.state = { isOpen: false };
-											if (!styles) {
-												throw new Error('No styles supplied');
+									},
+									{
+										key: 'applyWrapperStyles',
+										value: function applyWrapperStyles() {
+											var set =
+												arguments.length <= 0 || arguments[0] === undefined
+													? true
+													: arguments[0];
+											var applyClass = function applyClass(el, className) {
+												return el.classList[set ? 'add' : 'remove'](className);
+											};
+											if (this.props.htmlClassName) {
+												applyClass(
+													document.querySelector('html'),
+													this.props.htmlClassName
+												);
 											}
-										}
-										_createClass(Menu, [
-											{
-												key: 'toggleMenu',
-												value: function toggleMenu() {
-													var _this = this;
-													var options =
-														arguments.length <= 0 || arguments[0] === undefined
-															? {}
-															: arguments[0];
-													var isOpen = options.isOpen;
-													var noStateChange = options.noStateChange;
-													var newState = {
-														isOpen: typeof isOpen !== 'undefined' ? isOpen : !this.state.isOpen,
-													};
-													this.applyWrapperStyles();
-													this.setState(newState, function () {
-														!noStateChange && _this.props.onStateChange(newState);
-														if (!_this.props.disableAutoFocus) {
-															if (newState.isOpen) {
-																var firstItem = document.querySelector('.bm-item');
-																if (firstItem) {
-																	firstItem.focus();
-																}
-															} else {
-																if (document.activeElement) {
-																	document.activeElement.blur();
-																} else {
-																	document.body.blur();
-																}
-															}
-														}
-														_this.timeoutId && clearTimeout(_this.timeoutId);
-														_this.timeoutId = setTimeout(function () {
-															_this.timeoutId = null;
-															if (!newState.isOpen) {
-																_this.applyWrapperStyles(false);
-															}
-														}, 500);
-													});
-												},
-											},
-											{
-												key: 'applyWrapperStyles',
-												value: function applyWrapperStyles() {
-													var set =
-														arguments.length <= 0 || arguments[0] === undefined
-															? true
-															: arguments[0];
-													var applyClass = function applyClass(el, className) {
-														return el.classList[set ? 'add' : 'remove'](className);
-													};
-													if (this.props.htmlClassName) {
-														applyClass(
-															document.querySelector('html'),
-															this.props.htmlClassName
-														);
-													}
-													if (this.props.bodyClassName) {
-														applyClass(
-															document.querySelector('body'),
-															this.props.bodyClassName
-														);
-													}
-													if (styles.pageWrap && this.props.pageWrapId) {
-														this.handleExternalWrapper(
-															this.props.pageWrapId,
-															styles.pageWrap,
-															set
-														);
-													}
-													if (styles.outerContainer && this.props.outerContainerId) {
-														this.handleExternalWrapper(
-															this.props.outerContainerId,
-															styles.outerContainer,
-															set
-														);
-													}
-												},
-											},
-											{
-												key: 'handleExternalWrapper',
-												value: function handleExternalWrapper(id, wrapperStyles, set) {
-													var wrapper = document.getElementById(id);
-													if (!wrapper) {
-														console.error("Element with ID '" + id + "' not found");
-														return;
-													}
-													var builtStyles = this.getStyle(wrapperStyles);
-													for (var prop in builtStyles) {
-														if (builtStyles.hasOwnProperty(prop)) {
-															wrapper.style[prop] = set ? builtStyles[prop] : '';
-														}
-													}
-													var applyOverflow = function applyOverflow(el) {
-														return (el.style['overflow-x'] = set ? 'hidden' : '');
-													};
-													if (!this.props.htmlClassName) {
-														applyOverflow(document.querySelector('html'));
-													}
-													if (!this.props.bodyClassName) {
-														applyOverflow(document.querySelector('body'));
-													}
-												},
-											},
-											{
-												key: 'getStyles',
-												value: function getStyles(el, index, inline) {
-													var propName =
-														'bm' + el.replace(el.charAt(0), el.charAt(0).toUpperCase());
-													var output = _baseStyles2['default'][el]
-														? this.getStyle(_baseStyles2['default'][el])
-														: {};
-													if (styles[el]) {
-														output = _extends({}, output, this.getStyle(styles[el], index + 1));
-													}
-													if (this.props.styles[propName]) {
-														output = _extends({}, output, this.props.styles[propName]);
-													}
-													if (inline) {
-														output = _extends({}, output, inline);
-													}
-													if (this.props.noTransition) {
-														delete output.transition;
-													}
-													return output;
-												},
-											},
-											{
-												key: 'getStyle',
-												value: function getStyle(style, index) {
-													var width = this.props.width;
-													var formattedWidth =
-														typeof width !== 'string' ? width + 'px' : width;
-													return style(
-														this.state.isOpen,
-														formattedWidth,
-														this.props.right,
-														index
+											if (this.props.bodyClassName) {
+												applyClass(
+													document.querySelector('body'),
+													this.props.bodyClassName
+												);
+											}
+											if (styles.pageWrap && this.props.pageWrapId) {
+												this.handleExternalWrapper(
+													this.props.pageWrapId,
+													styles.pageWrap,
+													set
+												);
+											}
+											if (styles.outerContainer && this.props.outerContainerId) {
+												this.handleExternalWrapper(
+													this.props.outerContainerId,
+													styles.outerContainer,
+													set
+												);
+											}
+										},
+									},
+									{
+										key: 'handleExternalWrapper',
+										value: function handleExternalWrapper(id, wrapperStyles, set) {
+											var wrapper = document.getElementById(id);
+											if (!wrapper) {
+												console.error("Element with ID '" + id + "' not found");
+												return;
+											}
+											var builtStyles = this.getStyle(wrapperStyles);
+											for (var prop in builtStyles) {
+												if (builtStyles.hasOwnProperty(prop)) {
+													wrapper.style[prop] = set ? builtStyles[prop] : '';
+												}
+											}
+											var applyOverflow = function applyOverflow(el) {
+												return (el.style['overflow-x'] = set ? 'hidden' : '');
+											};
+											if (!this.props.htmlClassName) {
+												applyOverflow(document.querySelector('html'));
+											}
+											if (!this.props.bodyClassName) {
+												applyOverflow(document.querySelector('body'));
+											}
+										},
+									},
+									{
+										key: 'getStyles',
+										value: function getStyles(el, index, inline) {
+											var propName =
+												'bm' + el.replace(el.charAt(0), el.charAt(0).toUpperCase());
+											var output = _baseStyles2['default'][el]
+												? this.getStyle(_baseStyles2['default'][el])
+												: {};
+											if (styles[el]) {
+												output = _extends({}, output, this.getStyle(styles[el], index + 1));
+											}
+											if (this.props.styles[propName]) {
+												output = _extends({}, output, this.props.styles[propName]);
+											}
+											if (inline) {
+												output = _extends({}, output, inline);
+											}
+											if (this.props.noTransition) {
+												delete output.transition;
+											}
+											return output;
+										},
+									},
+									{
+										key: 'getStyle',
+										value: function getStyle(style, index) {
+											var width = this.props.width;
+											var formattedWidth =
+												typeof width !== 'string' ? width + 'px' : width;
+											return style(
+												this.state.isOpen,
+												formattedWidth,
+												this.props.right,
+												index
+											);
+										},
+									},
+									{
+										key: 'listenForClose',
+										value: function listenForClose(e) {
+											e = e || window.event;
+											if (
+												!this.props.disableCloseOnEsc &&
+												this.state.isOpen &&
+												(e.key === 'Escape' || e.keyCode === 27)
+											) {
+												this.toggleMenu();
+											}
+										},
+									},
+									{
+										key: 'shouldDisableOverlayClick',
+										value: function shouldDisableOverlayClick() {
+											if (typeof this.props.disableOverlayClick === 'function') {
+												return this.props.disableOverlayClick();
+											} else {
+												return this.props.disableOverlayClick;
+											}
+										},
+									},
+									{
+										key: 'componentDidMount',
+										value: function componentDidMount() {
+											if (this.props.customOnKeyDown) {
+												window.onkeydown = this.props.customOnKeyDown;
+											} else {
+												window.onkeydown = this.listenForClose.bind(this);
+											}
+											if (this.props.isOpen) {
+												this.toggleMenu({
+													isOpen: true,
+													noStateChange: true,
+												});
+											}
+										},
+									},
+									{
+										key: 'componentWillUnmount',
+										value: function componentWillUnmount() {
+											window.onkeydown = null;
+											this.applyWrapperStyles(false);
+										},
+									},
+									{
+										key: 'componentDidUpdate',
+										value: function componentDidUpdate(prevProps) {
+											var _this2 = this;
+											var wasToggled =
+												typeof this.props.isOpen !== 'undefined' &&
+												this.props.isOpen !== this.state.isOpen &&
+												this.props.isOpen !== prevProps.isOpen;
+											if (wasToggled) {
+												this.toggleMenu();
+												return;
+											}
+											if (styles.svg) {
+												(function() {
+													var morphShape = _reactDom2['default'].findDOMNode(
+														_this2,
+														'bm-morph-shape'
 													);
-												},
-											},
-											{
-												key: 'listenForClose',
-												value: function listenForClose(e) {
-													e = e || window.event;
-													if (
-														!this.props.disableCloseOnEsc &&
-														this.state.isOpen &&
-														(e.key === 'Escape' || e.keyCode === 27)
-													) {
-														this.toggleMenu();
-													}
-												},
-											},
-											{
-												key: 'shouldDisableOverlayClick',
-												value: function shouldDisableOverlayClick() {
-													if (typeof this.props.disableOverlayClick === 'function') {
-														return this.props.disableOverlayClick();
+													var path = styles.svg.lib(morphShape).select('path');
+													if (_this2.state.isOpen) {
+														styles.svg.animate(path);
 													} else {
-														return this.props.disableOverlayClick;
+														setTimeout(function() {
+															path.attr('d', styles.svg.pathInitial);
+														}, 300);
 													}
-												},
-											},
-											{
-												key: 'componentDidMount',
-												value: function componentDidMount() {
-													if (this.props.customOnKeyDown) {
-														window.onkeydown = this.props.customOnKeyDown;
-													} else {
-														window.onkeydown = this.listenForClose.bind(this);
-													}
-													if (this.props.isOpen) {
-														this.toggleMenu({
-															isOpen: true,
-															noStateChange: true,
-														});
-													}
-												},
-											},
-											{
-												key: 'componentWillUnmount',
-												value: function componentWillUnmount() {
-													window.onkeydown = null;
-													this.applyWrapperStyles(false);
-												},
-											},
-											{
-												key: 'componentDidUpdate',
-												value: function componentDidUpdate(prevProps) {
-													var _this2 = this;
-													var wasToggled =
-														typeof this.props.isOpen !== 'undefined' &&
-														this.props.isOpen !== this.state.isOpen &&
-														this.props.isOpen !== prevProps.isOpen;
-													if (wasToggled) {
-														this.toggleMenu();
-														return;
-													}
-													if (styles.svg) {
-														(function () {
-															var morphShape = _reactDom2['default'].findDOMNode(
-																_this2,
-																'bm-morph-shape'
+												})();
+											}
+										},
+									},
+									{
+										key: 'render',
+										value: function render() {
+											var _this3 = this;
+											return _react2['default'].createElement(
+												'div',
+												null,
+												!this.props.noOverlay &&
+													_react2['default'].createElement('div', {
+														className: ('bm-overlay ' + this.props.overlayClassName).trim(),
+														onClick: function() {
+															return (
+																!_this3.shouldDisableOverlayClick() && _this3.toggleMenu()
 															);
-															var path = styles.svg.lib(morphShape).select('path');
-															if (_this2.state.isOpen) {
-																styles.svg.animate(path);
-															} else {
-																setTimeout(function () {
-																	path.attr('d', styles.svg.pathInitial);
-																}, 300);
-															}
-														})();
-													}
-												},
-											},
-											{
-												key: 'render',
-												value: function render() {
-													var _this3 = this;
-													return _react2['default'].createElement(
-														'div',
-														null,
-														!this.props.noOverlay &&
-														_react2['default'].createElement('div', {
-															className: ('bm-overlay ' + this.props.overlayClassName).trim(),
-															onClick: function () {
-																return (
-																	!_this3.shouldDisableOverlayClick() && _this3.toggleMenu()
-																);
-															},
-															style: this.getStyles('overlay'),
-														}),
+														},
+														style: this.getStyles('overlay'),
+													}),
+												_react2['default'].createElement(
+													'div',
+													{
+														id: this.props.id,
+														className: ('bm-menu-wrap ' + this.props.className).trim(),
+														style: this.getStyles('menuWrap'),
+													},
+													styles.svg &&
 														_react2['default'].createElement(
 															'div',
 															{
-																id: this.props.id,
-																className: ('bm-menu-wrap ' + this.props.className).trim(),
-																style: this.getStyles('menuWrap'),
+																className: (
+																	'bm-morph-shape ' + this.props.morphShapeClassName
+																).trim(),
+																style: this.getStyles('morphShape'),
 															},
-															styles.svg &&
 															_react2['default'].createElement(
-																'div',
+																'svg',
 																{
-																	className: (
-																		'bm-morph-shape ' + this.props.morphShapeClassName
-																	).trim(),
-																	style: this.getStyles('morphShape'),
+																	width: '100%',
+																	height: '100%',
+																	viewBox: '0 0 100 800',
+																	preserveAspectRatio: 'none',
 																},
-																_react2['default'].createElement(
-																	'svg',
-																	{
-																		width: '100%',
-																		height: '100%',
-																		viewBox: '0 0 100 800',
-																		preserveAspectRatio: 'none',
-																	},
-																	_react2['default'].createElement('path', {
-																		d: styles.svg.pathInitial,
-																	})
-																)
-															),
-															_react2['default'].createElement(
-																'div',
-																{
-																	className: ('bm-menu ' + this.props.menuClassName).trim(),
-																	style: this.getStyles('menu'),
-																},
-																_react2['default'].createElement(
-																	'nav',
-																	{
-																		className: (
-																			'bm-item-list ' + this.props.itemListClassName
-																		).trim(),
-																		style: this.getStyles('itemList'),
-																	},
-																	_react2['default'].Children.map(this.props.children, function (
-																		item,
-																		index
-																	) {
-																		if (item) {
-																			var classList = [
-																				'bm-item',
-																				_this3.props.itemClassName,
-																				item.props.className,
-																			]
-																				.filter(function (className) {
-																					return !!className;
-																				})
-																				.join(' ');
-																			var extraProps = {
-																				key: index,
-																				className: classList,
-																				style: _this3.getStyles('item', index, item.props.style),
-																				tabIndex: _this3.state.isOpen ? 0 : -1,
-																			};
-																			return _react2['default'].cloneElement(item, extraProps);
-																		}
-																	})
-																)
-															),
-															this.props.customCrossIcon !== false &&
-															_react2['default'].createElement(
-																'div',
-																{ style: this.getStyles('closeButton') },
-																_react2['default'].createElement(_CrossIcon2['default'], {
-																	onClick: function () {
-																		return _this3.toggleMenu();
-																	},
-																	styles: this.props.styles,
-																	customIcon: this.props.customCrossIcon,
-																	className: this.props.crossButtonClassName,
-																	crossClassName: this.props.crossClassName,
-																	tabIndex: this.state.isOpen ? 0 : -1,
+																_react2['default'].createElement('path', {
+																	d: styles.svg.pathInitial,
 																})
 															)
 														),
-														this.props.customBurgerIcon !== false &&
+													_react2['default'].createElement(
+														'div',
+														{
+															className: ('bm-menu ' + this.props.menuClassName).trim(),
+															style: this.getStyles('menu'),
+														},
+														_react2['default'].createElement(
+															'nav',
+															{
+																className: (
+																	'bm-item-list ' + this.props.itemListClassName
+																).trim(),
+																style: this.getStyles('itemList'),
+															},
+															_react2['default'].Children.map(this.props.children, function(
+																item,
+																index
+															) {
+																if (item) {
+																	var classList = [
+																		'bm-item',
+																		_this3.props.itemClassName,
+																		item.props.className,
+																	]
+																		.filter(function(className) {
+																			return !!className;
+																		})
+																		.join(' ');
+																	var extraProps = {
+																		key: index,
+																		className: classList,
+																		style: _this3.getStyles('item', index, item.props.style),
+																		tabIndex: _this3.state.isOpen ? 0 : -1,
+																	};
+																	return _react2['default'].cloneElement(item, extraProps);
+																}
+															})
+														)
+													),
+													this.props.customCrossIcon !== false &&
 														_react2['default'].createElement(
 															'div',
-															{ style: this.getStyles('burgerIcon') },
-															_react2['default'].createElement(_BurgerIcon2['default'], {
-																onClick: function () {
+															{ style: this.getStyles('closeButton') },
+															_react2['default'].createElement(_CrossIcon2['default'], {
+																onClick: function() {
 																	return _this3.toggleMenu();
 																},
 																styles: this.props.styles,
-																customIcon: this.props.customBurgerIcon,
-																className: this.props.burgerButtonClassName,
-																barClassName: this.props.burgerBarClassName,
-																onIconStateChange: this.props.onIconStateChange,
+																customIcon: this.props.customCrossIcon,
+																className: this.props.crossButtonClassName,
+																crossClassName: this.props.crossClassName,
+																tabIndex: this.state.isOpen ? 0 : -1,
 															})
 														)
-													);
-												},
-											},
-										]);
-										return Menu;
-									})(_react.Component);
-									Menu.propTypes = {
-										bodyClassName: _propTypes2['default'].string,
-										burgerBarClassName: _propTypes2['default'].string,
-										burgerButtonClassName: _propTypes2['default'].string,
-										className: _propTypes2['default'].string,
-										crossButtonClassName: _propTypes2['default'].string,
-										crossClassName: _propTypes2['default'].string,
-										customBurgerIcon: _propTypes2['default'].oneOfType([
-											_propTypes2['default'].element,
-											_propTypes2['default'].oneOf([false]),
-										]),
-										customCrossIcon: _propTypes2['default'].oneOfType([
-											_propTypes2['default'].element,
-											_propTypes2['default'].oneOf([false]),
-										]),
-										customOnKeyDown: _propTypes2['default'].func,
-										disableAutoFocus: _propTypes2['default'].bool,
-										disableCloseOnEsc: _propTypes2['default'].bool,
-										disableOverlayClick: _propTypes2['default'].oneOfType([
-											_propTypes2['default'].bool,
-											_propTypes2['default'].func,
-										]),
-										htmlClassName: _propTypes2['default'].string,
-										id: _propTypes2['default'].string,
-										isOpen: _propTypes2['default'].bool,
-										itemClassName: _propTypes2['default'].string,
-										itemListClassName: _propTypes2['default'].string,
-										menuClassName: _propTypes2['default'].string,
-										morphShapeClassName: _propTypes2['default'].string,
-										noOverlay: _propTypes2['default'].bool,
-										noTransition: _propTypes2['default'].bool,
-										onIconHoverChange: _propTypes2['default'].func,
-										onStateChange: _propTypes2['default'].func,
-										outerContainerId:
-											styles && styles.outerContainer
-												? _propTypes2['default'].string.isRequired
-												: _propTypes2['default'].string,
-										overlayClassName: _propTypes2['default'].string,
-										pageWrapId:
-											styles && styles.pageWrap
-												? _propTypes2['default'].string.isRequired
-												: _propTypes2['default'].string,
-										right: _propTypes2['default'].bool,
-										styles: _propTypes2['default'].object,
-										width: _propTypes2['default'].oneOfType([
-											_propTypes2['default'].number,
-											_propTypes2['default'].string,
-										]),
-									};
-									Menu.defaultProps = {
-										bodyClassName: '',
-										burgerBarClassName: '',
-										burgerButtonClassName: '',
-										className: '',
-										crossButtonClassName: '',
-										crossClassName: '',
-										disableAutoFocus: false,
-										disableCloseOnEsc: false,
-										htmlClassName: '',
-										id: '',
-										itemClassName: '',
-										itemListClassName: '',
-										menuClassName: '',
-										morphShapeClassName: '',
-										noOverlay: false,
-										noTransition: false,
-										onStateChange: function onStateChange() { },
-										outerContainerId: '',
-										overlayClassName: '',
-										pageWrapId: '',
-										styles: {},
-										width: 300,
-										onIconHoverChange: function onIconHoverChange() { },
-									};
-									return Menu;
-								};
-								module.exports = exports['default'];
-							}.call(
-								this,
-								typeof global !== 'undefined'
-									? global
-									: typeof self !== 'undefined'
-										? self
-										: typeof window !== 'undefined'
-											? window
-											: {}
-							));
+												),
+												this.props.customBurgerIcon !== false &&
+													_react2['default'].createElement(
+														'div',
+														{ style: this.getStyles('burgerIcon') },
+														_react2['default'].createElement(_BurgerIcon2['default'], {
+															onClick: function() {
+																return _this3.toggleMenu();
+															},
+															styles: this.props.styles,
+															customIcon: this.props.customBurgerIcon,
+															className: this.props.burgerButtonClassName,
+															barClassName: this.props.burgerBarClassName,
+															onIconStateChange: this.props.onIconStateChange,
+														})
+													)
+											);
+										},
+									},
+								]);
+								return Menu;
+							})(_react.Component);
+							Menu.propTypes = {
+								bodyClassName: _propTypes2['default'].string,
+								burgerBarClassName: _propTypes2['default'].string,
+								burgerButtonClassName: _propTypes2['default'].string,
+								className: _propTypes2['default'].string,
+								crossButtonClassName: _propTypes2['default'].string,
+								crossClassName: _propTypes2['default'].string,
+								customBurgerIcon: _propTypes2['default'].oneOfType([
+									_propTypes2['default'].element,
+									_propTypes2['default'].oneOf([false]),
+								]),
+								customCrossIcon: _propTypes2['default'].oneOfType([
+									_propTypes2['default'].element,
+									_propTypes2['default'].oneOf([false]),
+								]),
+								customOnKeyDown: _propTypes2['default'].func,
+								disableAutoFocus: _propTypes2['default'].bool,
+								disableCloseOnEsc: _propTypes2['default'].bool,
+								disableOverlayClick: _propTypes2['default'].oneOfType([
+									_propTypes2['default'].bool,
+									_propTypes2['default'].func,
+								]),
+								htmlClassName: _propTypes2['default'].string,
+								id: _propTypes2['default'].string,
+								isOpen: _propTypes2['default'].bool,
+								itemClassName: _propTypes2['default'].string,
+								itemListClassName: _propTypes2['default'].string,
+								menuClassName: _propTypes2['default'].string,
+								morphShapeClassName: _propTypes2['default'].string,
+								noOverlay: _propTypes2['default'].bool,
+								noTransition: _propTypes2['default'].bool,
+								onIconHoverChange: _propTypes2['default'].func,
+								onStateChange: _propTypes2['default'].func,
+								outerContainerId:
+									styles && styles.outerContainer
+										? _propTypes2['default'].string.isRequired
+										: _propTypes2['default'].string,
+								overlayClassName: _propTypes2['default'].string,
+								pageWrapId:
+									styles && styles.pageWrap
+										? _propTypes2['default'].string.isRequired
+										: _propTypes2['default'].string,
+								right: _propTypes2['default'].bool,
+								styles: _propTypes2['default'].object,
+								width: _propTypes2['default'].oneOfType([
+									_propTypes2['default'].number,
+									_propTypes2['default'].string,
+								]),
+							};
+							Menu.defaultProps = {
+								bodyClassName: '',
+								burgerBarClassName: '',
+								burgerButtonClassName: '',
+								className: '',
+								crossButtonClassName: '',
+								crossClassName: '',
+								disableAutoFocus: false,
+								disableCloseOnEsc: false,
+								htmlClassName: '',
+								id: '',
+								itemClassName: '',
+								itemListClassName: '',
+								menuClassName: '',
+								morphShapeClassName: '',
+								noOverlay: false,
+								noTransition: false,
+								onStateChange: function onStateChange() {},
+								outerContainerId: '',
+								overlayClassName: '',
+								pageWrapId: '',
+								styles: {},
+								width: 300,
+								onIconHoverChange: function onIconHoverChange() {},
+							};
+							return Menu;
+						};
+						module.exports = exports['default'];
+					}.call(
+						this,
+						typeof global !== 'undefined'
+							? global
+							: typeof self !== 'undefined'
+							? self
+							: typeof window !== 'undefined'
+							? window
+							: {}
+					));
 				},
 				{
 					'./BurgerIcon': 11,
@@ -3108,7 +3105,7 @@ object-assign
 			],
 			16: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					function _interopRequireDefault(obj) {
 						return obj && obj.__esModule ? obj : { default: obj };
@@ -3301,7 +3298,7 @@ object-assign
 			],
 			17: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					function _interopRequireDefault(obj) {
 						return obj && obj.__esModule ? obj : { default: obj };
@@ -3427,7 +3424,7 @@ object-assign
 			],
 			18: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					function _interopRequireDefault(obj) {
 						return obj && obj.__esModule ? obj : { default: obj };
@@ -3490,7 +3487,7 @@ object-assign
 			],
 			19: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					function _interopRequireDefault(obj) {
 						return obj && obj.__esModule ? obj : { default: obj };
@@ -3539,7 +3536,7 @@ object-assign
 			],
 			20: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					function _interopRequireDefault(obj) {
 						return obj && obj.__esModule ? obj : { default: obj };
@@ -3593,7 +3590,7 @@ object-assign
 			],
 			21: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					function _interopRequireDefault(obj) {
 						return obj && obj.__esModule ? obj : { default: obj };
@@ -3719,7 +3716,7 @@ object-assign
 			],
 			22: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					function _interopRequireDefault(obj) {
 						return obj && obj.__esModule ? obj : { default: obj };
@@ -3750,7 +3747,7 @@ object-assign
 			],
 			23: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					function _interopRequireDefault(obj) {
 						return obj && obj.__esModule ? obj : { default: obj };
@@ -3804,7 +3801,7 @@ object-assign
 			],
 			24: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					function _interopRequireDefault(obj) {
 						return obj && obj.__esModule ? obj : { default: obj };
@@ -3819,7 +3816,7 @@ object-assign
 			],
 			25: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					function _interopRequireDefault(obj) {
 						return obj && obj.__esModule ? obj : { default: obj };
@@ -3885,7 +3882,7 @@ object-assign
 			],
 			26: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					exports['default'] = function() {
 						var Snap = undefined;
@@ -3901,7 +3898,7 @@ object-assign
 			],
 			27: [
 				function(require, module, exports) {
-					
+					'use strict';
 					Object.defineProperty(exports, '__esModule', { value: true });
 					var pxToNum = function pxToNum(val) {
 						return parseInt(val.slice(0, -2), 10);
