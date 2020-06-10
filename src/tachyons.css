@@ -532,7 +532,7 @@ ul {
 }
 
 .b--gold {
-	border-color: #ffb700;
+	border-color: #ffb71b;
 }
 
 .b--yellow {
@@ -1868,7 +1868,7 @@ code {
 }
 
 .gold {
-	color: #ffb700;
+	color: #ffb71b;
 }
 
 .yellow {
@@ -2096,7 +2096,7 @@ code {
 }
 
 .bg-gold {
-	background-color: #ffb700;
+	background-color: #ffb71b;
 }
 
 .bg-yellow {
@@ -2505,7 +2505,7 @@ code {
 
 .hover-gold:focus,
 .hover-gold:hover {
-	color: #ffb700;
+	color: #ffb71b;
 }
 
 .hover-yellow:focus,
@@ -2630,7 +2630,7 @@ code {
 
 .hover-bg-gold:focus,
 .hover-bg-gold:hover {
-	background-color: #ffb700;
+	background-color: #ffb71b;
 }
 
 .hover-bg-yellow:focus,
@@ -11128,4 +11128,19 @@ code {
 	.v-btm-t {
 		vertical-align: bottom;
 	}
+}
+
+.resp-container {
+	position: relative;
+	overflow: hidden;
+	padding-top: 56.25%;
+}
+
+.resp-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
 }
