@@ -36,28 +36,28 @@ class Example extends React.Component {
 					<NavLink
 						onClick={() => this.closeMenu()}
 						to="/"
-						className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
+						className="link helvetica white hover-gold f-5 f1-m fw7 pb5 outline-0"
 					>
 						Home
 					</NavLink>
 					<NavLink
 						onClick={() => this.closeMenu()}
 						to="/work"
-						className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
+						className="link helvetica white hover-gold f-5 f1-m fw7 pb5 outline-0"
 					>
 						Work
 					</NavLink>
 					<NavLink
 						onClick={() => this.closeMenu()}
 						to="/about"
-						className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
+						className="link helvetica white hover-gold f-5 f1-m fw7 pb5 outline-0"
 					>
 						About
 					</NavLink>
 					<NavLink
 						onClick={() => this.closeMenu()}
 						to="/contacts"
-						className="link helvetica white f-5 f1-m fw7 pb5 outline-0"
+						className="link helvetica white hover-gold f-5 f1-m fw7 pb5 outline-0"
 					>
 						Contacts
 					</NavLink>
