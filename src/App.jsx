@@ -5,9 +5,9 @@ import './App.css';
 import './tachyons.css';
 import './type.css';
 import { useRouter } from './hooks/useRouter';
-import { Header, Footer } from './components/Header';
 
 import { Home, Contacts, About, Work, Archive } from './pages';
+import { Header, Footer } from './components/Header';
 
 function ScrollToTop({ children }) {
 	const {
@@ -73,10 +73,8 @@ export default function App() {
 		<Router>
 			<ScrollToTop>
 				<Header />
-				<div style={{ overflow: 'hidden' }}>
-					<PageContent />
-					<Footer />
-				</div>
+				<PageContent />
+				<Footer />
 			</ScrollToTop>
 		</Router>
 	);

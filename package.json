@@ -23,7 +23,8 @@
 		"react-sticky": "^6.0.3",
 		"react-text-loop": "^2.2.1",
 		"simple-react-lightbox": "^2.8.0",
-		"slugify": "^1.4.0"
+		"slugify": "^1.4.0",
+		"styled-components": "^5.1.1"
 	},
 	"scripts": {
 		"start": "react-scripts start",
