@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { NavLink } from 'react-router-dom';
 const StyledBurger = styled.button`
 	position: absolute;
 	top: 0.7rem;
@@ -53,7 +53,7 @@ const StyledMenu = styled.nav`
 	transform: ${({ open }) => (open ? 'translateX(0%)' : 'translateX(100%)')};
 	height: 100vh;
 	text-align: center;
-	padding: 4rem;
+	padding: 1rem;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -61,22 +61,8 @@ const StyledMenu = styled.nav`
 		width: 100%;
 	}
 
-	a {
-		font-size: 6rem;
-		padding: 3rem 0;
-		font-weight: bold;
-		color: #ffffff;
-		text-decoration: none;
-		transition: color 0.1s linear;
 
-		@media (max-width: 576px) {
-			font-size: 1.5rem;
-			text-align: center;
-		}
 
-		&:hover {
-			color: #ffb71b;
-		}
 	}
 `;
 
@@ -104,25 +90,38 @@ const useOnClickOutside = (ref, handler) => {
 	}, [ref, handler]);
 };
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
 	return (
 		<StyledMenu open={open}>
-			<a href="/">
-				<span role="img" aria-label="about us" />
+			<NavLink
+				to="/"
+				className="menulink hover-gold"
+				onClick={() => setOpen(!open)}
+			>
 				Home
-			</a>
-			<a href="/">
-				<span role="img" aria-label="price" />
+			</NavLink>
+			<NavLink
+				to="/work"
+				className="menulink hover-gold"
+				onClick={() => setOpen(!open)}
+			>
 				Work
-			</a>
-			<a href="/">
-				<span role="img" aria-label="contact" />
+			</NavLink>
+
+			<NavLink
+				to="/about"
+				className="menulink hover-gold"
+				onClick={() => setOpen(!open)}
+			>
 				About
-			</a>
-			<a href="/">
-				<span role="img" aria-label="contacts" />
+			</NavLink>
+			<NavLink
+				to="/contacts"
+				className="menulink hover-gold"
+				onClick={() => setOpen(!open)}
+			>
 				Contacts
-			</a>
+			</NavLink>
 		</StyledMenu>
 	);
 };

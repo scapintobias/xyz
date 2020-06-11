@@ -7,7 +7,7 @@ import './type.css';
 import { useRouter } from './hooks/useRouter';
 
 import { Home, Contacts, About, Work, Archive } from './pages';
-import { Header, Footer } from './components/Header';
+import { Header, Footer } from './components/Header/';
 
 function ScrollToTop({ children }) {
 	const {

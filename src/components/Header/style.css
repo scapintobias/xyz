@@ -82,3 +82,23 @@ Note: Beware of modifying this element as it can break the animations - you shou
 	letter-spacing: -0.08rem;
 	color: #ffb700;
 }
+
+.menulink {
+	font-size: 6rem;
+	padding: 3rem 0;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.1s linear;
+
+
+
+}
+
+@media (max-width: 576px) {
+	.menulink {
+		font-size: 4rem;
+		text-align: right;
+		padding: 2rem 0;
+	}
+}
