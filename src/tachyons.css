@@ -1365,6 +1365,10 @@ code {
 	letter-spacing: -0.2rem;
 }
 
+.tracked-tight-title {
+	letter-spacing: -0.5rem;
+}
+
 .tracked-mega {
 	letter-spacing: 0.25em;
 }
@@ -3483,6 +3487,10 @@ code {
 	text-transform: none;
 }
 
+.f8,
+.f-mega {
+	font-size: 18rem;
+}
 
 .f-7,
 .f-title {

@@ -16,18 +16,8 @@ export const Home = () => (
 			<p>Design for All.</p>
 			<p>Design in every measure.</p>
 		</HomeText>
-		<HomeProject
-			title="Borromeo5"
-			subtitle="Corporate Image"
-			src="./img/borromeo.png"
-			link="/work"
-		/>
-		<HomeProject
-			title="Corte d'Arte"
-			subtitle="Corporate Image/Campaigns"
-			src="./img/corte.png"
-			link="/work"
-		/>
+		<HomeProject title="Borromeo5" background="./img/borromeo.png" link="/work" />
+		<HomeProject title="Corte d'Arte" background="./img/corte.png" link="/work" />
 		<HomeProjectVid
 			title="Ducati 1260 Multistrada"
 			subtitle="Video"
@@ -36,15 +26,13 @@ export const Home = () => (
 		/>
 		<HomeProject
 			title="Villa Manin"
-			subtitle="Corporate Image/Campaigns"
-			src="./img/borromeo.png"
+			background="./img/borromeo.png"
 			link="/work"
 		/>
 
 		<HomeProject
 			title="Villa Manin"
-			subtitle="Corporate Image"
-			src="./img/borromeo.png"
+			background="./img/borromeo.png"
 			link="/work"
 		/>
 	</main>
