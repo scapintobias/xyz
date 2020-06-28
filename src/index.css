@@ -52,6 +52,10 @@ ul {
   font-size: 100%;
 }
 
+.fill-viewport {
+  width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -81,7 +85,7 @@ h2 {
 h3 {
   font-weight: normal;
   font-style: italic;
-  x-color: #ef5419;
+  color: #ef5419;
   clear: both;
 }
 
@@ -94,11 +98,6 @@ h6 {
   clear: both;
 }
 
-.footer {
-  align-items: flex-end;
-  color: #666;
-  padding-bottom: 1rem;
-}
 
 .icon {
   display: flex;

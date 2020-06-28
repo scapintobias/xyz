@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useTransition, animated } from 'react-spring';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import './index.css';
 import './tachyons.css';
 import './type.css';
 import { useRouter } from './hooks/useRouter';
@@ -73,7 +74,9 @@ export default function App() {
 		<Router>
 			<ScrollToTop>
 				<Header />
-				<PageContent />
+				<div style={{ overflow: 'hidden' }}>
+					<PageContent />
+				</div>
 				<Footer />
 			</ScrollToTop>
 		</Router>

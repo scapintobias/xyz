@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-
 const StyledBurger = styled.button`
 	position: absolute;
 	top: 0.7rem;
@@ -97,14 +96,14 @@ const Menu = ({ open, setOpen }) => {
 		<StyledMenu open={open}>
 			<NavLink
 				to="/"
-				className="menulink hover-gold"
+				className="menulink hover-gold helvetica"
 				onClick={() => setOpen(!open)}
 			>
 				Home
 			</NavLink>
 			<NavLink
 				to="/work"
-				className="menulink hover-gold"
+				className="menulink hover-gold helvetica"
 				onClick={() => setOpen(!open)}
 			>
 				Work
@@ -112,14 +111,14 @@ const Menu = ({ open, setOpen }) => {
 
 			<NavLink
 				to="/about"
-				className="menulink hover-gold"
+				className="menulink hover-gold helvetica"
 				onClick={() => setOpen(!open)}
 			>
 				About
 			</NavLink>
 			<NavLink
 				to="/contacts"
-				className="menulink hover-gold"
+				className="menulink hover-gold helvetica"
 				onClick={() => setOpen(!open)}
 			>
 				Contacts

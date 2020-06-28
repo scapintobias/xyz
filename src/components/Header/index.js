@@ -19,8 +19,10 @@ export function Header() {
 
 export function Footer() {
 	return (
-		<div className="db bg-gold helvetica f4 fw8 white  w-100 pa2">
-			Scapin Tobias ©2020
-		</div>
+		<footer className="left-0 right-0 bottom-0 fixed">
+			<div className="bg-gold helvetica f5 fw6 tr white w-100 pa1">
+				Scapin Tobias ©2020
+			</div>
+		</footer>
 	);
 }
