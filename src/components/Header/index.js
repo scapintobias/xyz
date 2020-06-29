@@ -19,7 +19,7 @@ export function Header() {
 
 export function Footer() {
 	return (
-		<footer className="left-0 right-0 bottom-0 fixed">
+		<footer className="left-0 right-0 bottom-0 bt b--white fixed">
 			<div className="bg-gold helvetica f5 fw6 tr white w-100 pa1">
 				Scapin Tobias ©2020
 			</div>

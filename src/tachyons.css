@@ -1339,6 +1339,10 @@ code {
 	height: 75vh;
 }
 
+.vh-85 {
+	height: 85vh;
+}
+
 .vh-100 {
 	height: 100vh;
 }

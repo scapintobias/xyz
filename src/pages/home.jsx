@@ -18,10 +18,19 @@ const insideStyles = {
 
 export const Home = () => (
 	<main style={styles}>
+		<Parallax className="bg-gold" strength={500}>
+			<div className="vh-100 near-white tracked-tight helvetica fw7 f-mega lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m">
+				<div style={insideStyles}>
+					<p className="pb5">Fotografia</p>
+					<p className="pb5">Video</p>
+					<p className="pb5">Grafica</p>
+				</div>
+			</div>
+		</Parallax>
 		<NavLink to="/work" className="link">
 			<Parallax bgImage="./img/borromeo.png" strength={500}>
 				<div
-					style={{ height: 600 }}
+					style={{ height: 500 }}
 					className="near-white tracked-tight-title helvetica fw7 f-mega lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m hover-gold"
 				>
 					<div style={insideStyles}>Borromeo5</div>
@@ -31,7 +40,7 @@ export const Home = () => (
 		<NavLink to="/work" className="link">
 			<Parallax bgImage="./img/corte.png" strength={500}>
 				<div
-					style={{ height: 600 }}
+					style={{ height: 500 }}
 					className="near-white tracked-tight-title helvetica fw7 f-mega lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m hover-gold"
 				>
 					<div style={insideStyles}>Corte d'Arte</div>
@@ -45,6 +54,16 @@ export const Home = () => (
 					className="w-100"
 				></YoutubeBackground>
 			</div>
+		</NavLink>
+		<NavLink to="/work" className="link">
+			<Parallax bgImage="./img/borromeo.png" strength={500}>
+				<div
+					style={{ height: 500 }}
+					className="near-white tracked-tight-title helvetica fw7 f-mega lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m hover-gold"
+				>
+					<div style={insideStyles}>Borromeo5</div>
+				</div>
+			</Parallax>
 		</NavLink>
 	</main>
 );
