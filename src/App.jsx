@@ -60,7 +60,7 @@ function PageContent() {
 		<animated.div className="fill-viewport" key={key} style={props}>
 			<Switch location={item}>
 				<Route path="/" exact component={Home} />
-				<Route path="/contact" exact component={Contacts} />
+				<Route path="/contacts" exact component={Contacts} />
 				<Route path="/work" exact component={Projects} />
 				<Route path="/work/:type" exact component={Projects} />
 				<Route path="/work/:type/:year/:slug" component={Project} />
