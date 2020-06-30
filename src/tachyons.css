@@ -557,6 +557,10 @@ ul {
 	border-color: #ff41b4;
 }
 
+.b--fire-opal {
+	border-color: #DB5A42;
+}
+
 .b--pink {
 	border-color: #ff80cc;
 }
@@ -586,7 +590,7 @@ ul {
 }
 
 .b--blue {
-	border-color: #357edd;
+	border-color: #3574F5;
 }
 
 .b--light-blue {
@@ -1934,7 +1938,7 @@ code {
 }
 
 .blue {
-	color: #357edd;
+	color: #3574F5;
 }
 
 .light-blue {
@@ -1959,6 +1963,10 @@ code {
 
 .washed-red {
 	color: #ffdfdf;
+}
+
+.fire-opal {
+	color: #DB5A42;
 }
 
 .color-inherit {
@@ -2089,6 +2097,10 @@ code {
 	background-color: transparent;
 }
 
+.bg-fire-opal {
+	background-color: #DB5A42;
+}
+
 .bg-dark-red {
 	background-color: #e7040f;
 }
@@ -2162,7 +2174,7 @@ code {
 }
 
 .bg-blue {
-	background-color: #357edd;
+	background-color: #3574F5;
 }
 
 .bg-light-blue {
@@ -2217,6 +2229,11 @@ code {
 .hover-gray:focus,
 .hover-gray:hover {
 	color: #777;
+}
+
+.hover-fire-opal:focus,
+.hover-fire-opal:hover {
+	color: #DB5A42;
 }
 
 .hover-silver:focus,
@@ -2382,6 +2399,11 @@ code {
 .hover-bg-moon-gray:focus,
 .hover-bg-moon-gray:hover {
 	background-color: #ccc;
+}
+
+.hover-bg-fire-opal:focus,
+.hover-bg-fire-opal:hover {
+	background-color: #DB5A42;
 }
 
 .hover-bg-light-gray:focus,
@@ -2586,7 +2608,7 @@ code {
 
 .hover-blue:focus,
 .hover-blue:hover {
-	color: #357edd;
+	color: #3574F5;
 }
 
 .hover-light-blue:focus,
@@ -2711,7 +2733,7 @@ code {
 
 .hover-bg-blue:focus,
 .hover-bg-blue:hover {
-	background-color: #357edd;
+	background-color: #3574F5;
 }
 
 .hover-bg-light-blue:focus,
@@ -3849,7 +3871,7 @@ code {
 }
 
 .nested-links a {
-	color: #357edd;
+	color: #3574F5;
 	transition: color 0.15s ease-in;
 }
 

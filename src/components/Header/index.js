@@ -7,7 +7,7 @@ export function Header() {
 		<header className="header">
 			<section className="fixed w-100 bg-white z-max">
 				<Donald />
-				<NavLink className="logo dim helvetica" to="/">
+				<NavLink className="logo helvetica" to="/">
 					Scapin Tobias
 				</NavLink>
 			</section>

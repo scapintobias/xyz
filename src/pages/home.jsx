@@ -22,7 +22,7 @@ export const Home = () => (
 			<div className="near-white tracked helvetica fw7 f-7 lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m">
 				<div className="pa3">
 					<p>
-						<NavLink to="/work/photography" className="pb3 link white hover-orange">
+						<NavLink to="/work/photography" className="pb3 link white hover-blue">
 							Fotografia
 						</NavLink>
 					</p>
@@ -32,7 +32,7 @@ export const Home = () => (
 						</NavLink>
 					</p>
 					<p>
-						<NavLink to="/work/corporate" className="link white hover-green">
+						<NavLink to="/work/corporate" className="link white hover-fire-opal ">
 							Grafica
 						</NavLink>
 					</p>
@@ -51,7 +51,7 @@ export const Home = () => (
 			<Parallax bgImage="./cat/photo/mc/mc3.jpg" strength={-800} style={styles}>
 				<div
 					style={{ height: 500 }}
-					className="near-white tracked-tight-title helvetica fw7 f-mega lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m hover-gold bw3  bb b--gold"
+					className="blue tracked-tight-title helvetica fw7 f-mega lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m hover-gold bw3  bb b--gold"
 				>
 					<div style={insideStyles}>Mental Coach</div>
 				</div>
@@ -62,7 +62,7 @@ export const Home = () => (
 			<Parallax bgImage="./img/borromeo.png" strength={500} style={styles}>
 				<div
 					style={{ height: 500 }}
-					className="near-white tracked-tight-title helvetica fw7 f-mega lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m hover-gold bb bw3 b--gold"
+					className="near-white tracked-tight-title helvetica fw7 f-mega lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m hover-fire-opal bb bw3 b--gold"
 				>
 					<div style={insideStyles}>Borromeo5</div>
 				</div>
@@ -72,9 +72,23 @@ export const Home = () => (
 			<Parallax bgImage="./img/corte.png" strength={500} style={styles}>
 				<div
 					style={{ height: 500 }}
-					className="near-white tracked-tight helvetica fw7 f-mega lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m hover-gold"
+					className="near-white tracked-tight helvetica fw7 f-mega lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m hover-fire-opal"
 				>
 					<div style={insideStyles}>Corte d'Arte</div>
+				</div>
+			</Parallax>
+		</NavLink>
+		<NavLink to="/work/photography/2015/parole-prigioniere" className="link">
+			<Parallax
+				bgImage="./cat/prigioniere/expo_3.jpg"
+				strength={650}
+				style={styles}
+			>
+				<div
+					style={{ height: 500 }}
+					className="blue tracked-tight-title helvetica fw7 f-mega lh-title tracked-l f-6-l f1-m f-6-t tracked-t tracked-m hover-gold bw3  bt b--gold"
+				>
+					<div style={insideStyles}>Expo</div>
 				</div>
 			</Parallax>
 		</NavLink>
