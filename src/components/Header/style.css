@@ -72,8 +72,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
 	background-color: white;
 }
 
-.logo {
-	font-size: 2.9em;
+.header {
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+	border-bottom: 1px solid rgba(0, 39, 67, 0.3);
+	background-color: white;
+}
+
+.header .logo {
+	font-size: 2.4rem;
 	font-weight: bold;
 	display: block;
 	float: left;
@@ -81,17 +89,27 @@ Note: Beware of modifying this element as it can break the animations - you shou
 	text-decoration: none;
 	letter-spacing: -0.08rem;
 	color: #ffb700;
+	;
 }
+
+
 
 .menulink {
 	font-size: 8rem;
 	padding: 4rem 0;
 	font-weight: 900;
-	color: #ffffff;
+	color: white;
 	text-decoration: none;
 	transition: color 0.1s linear;
+}
 
+.menulink:visited {
+	color: white;
 
+}
+
+.menulink:hover {
+	color: #ffb71b;
 
 }
 
@@ -102,4 +120,3 @@ Note: Beware of modifying this element as it can break the animations - you shou
 		padding: 2rem 0;
 	}
 }
-

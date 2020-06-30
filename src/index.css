@@ -52,10 +52,9 @@ ul {
   font-size: 100%;
 }
 
-.fill-viewport {
-  width: 100%;
-}
-
+/************************************************
+Table
+************************************************/
 html {
   scroll-behavior: smooth;
 }
@@ -71,6 +70,7 @@ a img {
 
 body,
 input {
+  color: black;
   font-weight: normal;
   font-size: 87.5%;
   line-height: 1.5em;
@@ -98,6 +98,11 @@ h6 {
   clear: both;
 }
 
+.footer {
+  align-items: flex-end;
+  color: #666;
+  padding-bottom: 1rem;
+}
 
 .icon {
   display: flex;

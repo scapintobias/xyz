@@ -7,7 +7,7 @@ import './tachyons.css';
 import './type.css';
 import { useRouter } from './hooks/useRouter';
 
-import { Home, Contacts, About, Work, Archive } from './pages';
+import { Home, Contacts, Project, Projects } from './pages';
 import { Header, Footer } from './components/Header/';
 
 function ScrollToTop({ children }) {
@@ -61,9 +61,9 @@ function PageContent() {
 			<Switch location={item}>
 				<Route path="/" exact component={Home} />
 				<Route path="/contact" exact component={Contacts} />
-				<Route path="/work" exact component={Work} />
-				<Route path="/about" exact component={About} />
-				<Route path="/archive" exact component={Archive} />
+				<Route path="/work" exact component={Projects} />
+				<Route path="/work/:type" exact component={Projects} />
+				<Route path="/work/:type/:year/:slug" component={Project} />
 			</Switch>
 		</animated.div>
 	));

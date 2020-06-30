@@ -1,0 +1,36 @@
+.projects-list {
+  list-decoration: none;
+  padding: 0 1rem 3rem;
+}
+
+.projects-list a {
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  color: black;
+}
+
+.projects-list a:hover {
+  color: #ffb71b;
+}
+
+.projects-list li {
+  display: flex;
+  padding: 0.25rem 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.projects-list li span.year {
+  width: 12%;
+  text-align: right;
+}
+
+.projects-list li span.type {
+  width: 38%;
+}
+
+.projects-list li span.title {
+  width: 50%;
+}

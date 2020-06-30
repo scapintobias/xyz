@@ -1,0 +1,47 @@
+.project-navigation-clearfix {
+  width: 100%;
+  height: 9.6rem;
+  display: block;
+}
+
+.project-navigation-wrapper {
+  width: 100%;
+  position: fixed;
+}
+
+.project-navigation {
+  margin-top: 53px;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}
+
+#titproj {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.left {
+  padding-right: 1rem;
+  justify-content: flex-start;
+}
+
+.right {
+  padding-left: 1rem;
+  justify-content: flex-end;
+}
+
+.left img,
+.right img {
+  max-width: 3rem;
+}

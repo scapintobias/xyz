@@ -5,6 +5,7 @@ html {
 
 body {
 	margin: 0;
+	color: black;
 }
 
 h1 {
@@ -27,17 +28,16 @@ a {
 	background-color: transparent;
 	text-decoration: none;
 	padding-bottom: 1px;
-	outline: 0;
 }
 
 a:link {
 	text-decoration: none;
-	outline: 0;
+	color: inherit;
 }
 
 a:visited {
 	text-decoration: none;
-	outline: 0;
+	color: inherit;
 }
 
 abbr[title] {
@@ -1333,6 +1333,10 @@ code {
 
 .vh-50 {
 	height: 50vh;
+}
+
+.vh-60 {
+	height: 60vh;
 }
 
 .vh-75 {
@@ -3828,13 +3832,13 @@ code {
 	list-style-type: none;
 }
 
-.nested-copy-indent p + p {
+.nested-copy-indent p+p {
 	text-indent: 1em;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
-.nested-copy-separator p + p {
+.nested-copy-separator p+p {
 	margin-top: 1.5em;
 }
 
@@ -3872,27 +3876,19 @@ code {
 }
 
 .debug-grid {
-	background: transparent
-		url('data:image/png; base64, iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFElEQVR4AWPAC97/9x0eCsAEPgwAVLshdpENIxcAAAAASUVORK5CYII=')
-		repeat 0 0;
+	background: transparent url('data:image/png; base64, iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFElEQVR4AWPAC97/9x0eCsAEPgwAVLshdpENIxcAAAAASUVORK5CYII=') repeat 0 0;
 }
 
 .debug-grid-16 {
-	background: transparent
-		url('data:image/png; base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII=')
-		repeat 0 0;
+	background: transparent url('data:image/png; base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII=') repeat 0 0;
 }
 
 .debug-grid-8-solid {
-	background: #fff
-		url('data:image/gif; base64, R0lGODdhCAAIAPEAAADw/wDx /////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw==')
-		repeat 0 0;
+	background: #fff url('data:image/gif; base64, R0lGODdhCAAIAPEAAADw/wDx /////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw==') repeat 0 0;
 }
 
 .debug-grid-16-solid {
-	background: #fff
-		url('data:image/gif; base64, R0lGODdhEAAQAPEAAADw/wDx/xXy /////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7')
-		repeat 0 0;
+	background: #fff url('data:image/gif; base64, R0lGODdhEAAQAPEAAADw/wDx/xXy /////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7') repeat 0 0;
 }
 
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
@@ -5690,7 +5686,7 @@ code {
 		height: 500px;
 	}
 
-	.tso-m > iframe {
+	.tso-m>iframe {
 		transform: scale(0.5);
 		position: relative;
 		top: -200px;
@@ -6386,9 +6382,11 @@ code {
 	.fw9-m {
 		font-weight: 900;
 	}
+
 	.h1-m {
 		height: 2rem;
 	}
+
 	.h2-m {
 		height: 2rem;
 	}
@@ -6444,6 +6442,7 @@ code {
 	.h9-m {
 		height: 48rem;
 	}
+
 	.h-25-m {
 		height: 25%;
 	}

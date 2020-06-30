@@ -96,29 +96,22 @@ const Menu = ({ open, setOpen }) => {
 		<StyledMenu open={open}>
 			<NavLink
 				to="/"
-				className="menulink hover-gold helvetica"
+				className="menulink helvetica"
 				onClick={() => setOpen(!open)}
 			>
 				Home
 			</NavLink>
 			<NavLink
 				to="/work"
-				className="menulink hover-gold helvetica"
+				className="menulink helvetica"
 				onClick={() => setOpen(!open)}
 			>
 				Work
 			</NavLink>
 
 			<NavLink
-				to="/about"
-				className="menulink hover-gold helvetica"
-				onClick={() => setOpen(!open)}
-			>
-				About
-			</NavLink>
-			<NavLink
 				to="/contacts"
-				className="menulink hover-gold helvetica"
+				className="menulink helvetica"
 				onClick={() => setOpen(!open)}
 			>
 				Contacts
